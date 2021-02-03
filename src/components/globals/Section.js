@@ -2,7 +2,7 @@ import styled from "styled-components"
 import { setRem, media } from "../../styles"
 
 const Section = styled.section`
-	padding: 2em;
+	padding: ${setRem(25)};
 	background: ${props => props.color || "#fffffe"};
 	${media.tablet`
 		padding: ${props => props.horizontalPadding || "4em"}

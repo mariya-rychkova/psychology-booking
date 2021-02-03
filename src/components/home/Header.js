@@ -1,12 +1,12 @@
+// TODO: add constants.js
+
 import React, { useState } from "react"
-import scrollTo from "gatsby-plugin-smoothscroll"
 import { Link } from "gatsby"
 import {
-	Logo,
+	Nav,
 	Menu,
 	Overlay,
 	OverlayMenu,
-	Nav,
 	NavIcon,
 	Line,
 } from "../globals/Navbar"

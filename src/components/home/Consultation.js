@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import Section from "../globals/Section"
 import Title from "../globals/Title"
 import TwoColumnsGrid from "../globals/TwoColumnsGrid"

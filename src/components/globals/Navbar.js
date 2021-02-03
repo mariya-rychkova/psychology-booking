@@ -26,12 +26,16 @@ export const Menu = styled.ul`
 		justify-content: center;
 		align-items: center;
 		a {
+			text-decoration: none;
 			color: ${setColor.mainBlue};
 			${setFont.paragraph};
 			${setLetterSpacing(1)};
 			font-size: ${setRem(18)};
 			font-weight: 700;
 			padding-right: 20px;
+			:hover {
+				text-decoration: underline;
+			}
 		}
 	`};
 `
@@ -75,6 +79,8 @@ export const Overlay = styled.div`
 
 export const OverlayMenu = styled.ul`
 	list-style: none;
+	width: 100%;
+	text-align: center;
 	display: flex;
 	flex-direction: column;
 	position: absolute;
@@ -83,13 +89,20 @@ export const OverlayMenu = styled.ul`
 	transform: translate(-50%, -50%);
 	max-height: 100%;
 	a {
+		text-decoration: none;
 		opacity: ${props => (props.open ? 1 : 0)};
-		transition-delay: ${props => (props.open ? "0.43s" : "0.1s")};
+		transition: opacity 0.1ms linear ${props => (props.open ? "0.4s" : "0.1s")};
 		color: ${setColor.mainBlue};
+		padding: ${setRem(10)};
 		${setFont.paragraph};
 		${setLetterSpacing(2)};
 		font-size: ${setRem(25)};
 		font-weight: 700;
 		margin: 1em 0px;
+		:hover {
+			background-color: ${setColor.mainBlue};
+			color: ${setColor.primaryWhite};
+			width: 100%;
+		}
 	}
 `
